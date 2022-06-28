@@ -10,7 +10,7 @@ body {
 }
 
 .bg{
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.274);
   position: absolute;
   top: 0;
   height: 100vh;
@@ -24,6 +24,10 @@ body {
 
 .bg > span{
   border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .material-symbols-outlined {
@@ -34,10 +38,13 @@ body {
   'opsz' 48;
   width: 500px;
   height: 300px;
-  background-color: grey;
   text-align: center;
   justify-items: center;
   margin-top: 200px;
+}
+
+.bg > span > div{
+  display: inline-block;
 }
 
 
@@ -49,6 +56,17 @@ body {
     position: relative;
     overflow: hidden;
     background: linear-gradient(#e887eb, #E0F6FF)
+}
+
+.game-board > #contagem{
+  background-color: black;
+  color: white;
+  width: 100px;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: center;
 }
 
 .pipe {
